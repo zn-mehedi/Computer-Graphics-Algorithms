@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MidPointCircleActivity">
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+
+          <LinearLayout
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+               android:orientation="vertical"
+               >
+              <HorizontalScrollView
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  >
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      >
+                 <TextView
+                  android:id="@+id/tv1cd"
+                  android:text="Ans"
+                  android:layout_gravity="left"
+                  android:textSize="20sp"
+                  android:textColor="@color/black"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingHorizontal="15dp"
+                  android:layout_marginBottom="5dp"
+                  />
+                  <TextView
+                      android:id="@+id/tv4cd"
+                      android:text="center_add"
+                      android:textSize="15sp"
+                      android:textColor="@color/black"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:paddingHorizontal="15dp"
+                      android:layout_marginBottom="5dp"/>
+                  </LinearLayout>
+              </HorizontalScrollView>
+              <HorizontalScrollView
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  >
+
+              <TextView
+                  android:id="@+id/tv2cd"
+                  android:text="rules"
+                  android:textSize="20sp"
+                  android:textColor="@color/black"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingHorizontal="15dp"
+                  android:layout_marginBottom="5dp"
+                  />
+
+              </HorizontalScrollView>
+              <HorizontalScrollView
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  >
+                  <TextView
+                  android:id="@+id/tv3cd"
+                  android:text="Po"
+                  android:textSize="20sp"
+                  android:textColor="@color/black"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingHorizontal="15dp"
+                  android:layout_marginBottom="5dp"
+                      />
+              </HorizontalScrollView>
+
+              <HorizontalScrollView
+                  android:id="@+id/hsvt0mpc"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  >
+                  <TableLayout
+                      android:id="@+id/tb0MpC"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingHorizontal="15dp"
+                      >
+
+                  </TableLayout>
+              </HorizontalScrollView>
+               <TextView
+                   android:id="@+id/tv1MpC"
+                   android:text="Main Chart"
+                   android:layout_gravity="center"
+                   android:textSize="30sp"
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <HorizontalScrollView
+                   android:id="@+id/hsvt1mpc"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   >
+                   <TableLayout
+                       android:id="@+id/tb1MpC"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingHorizontal="15dp"
+                       >
+
+                   </TableLayout>
+               </HorizontalScrollView>
+               <TextView
+                   android:id="@+id/tv2mpc"
+                   android:layout_gravity="center"
+                   android:text="Quadrants"
+                   android:textSize="30sp"
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+
+                   />
+
+               <HorizontalScrollView
+                   android:id="@+id/hsvt2mpc"
+                   app:layout_constraintTop_toBottomOf="@id/tv2mpc"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   >
+
+                   <TableLayout
+                       android:id="@+id/tb2MpC"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingHorizontal="15dp"
+                       android:paddingVertical="15dp"
+                       android:layout_marginBottom="5dp"
+                       >
+                   </TableLayout>
+
+               </HorizontalScrollView>
+           </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

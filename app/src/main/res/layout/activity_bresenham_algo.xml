@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bresenham_algo">
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            >
+        <LinearLayout
+            android:id="@+id/ll1_bresenham_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="15dp"
+            >
+            <TextView
+                android:id="@+id/tv1_ll_bresenham_upper_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="del x, del y"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                />
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            <TextView
+                android:id="@+id/tv2_ll_bresenham_upper_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rules"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            </HorizontalScrollView>
+        </LinearLayout>
+    <TextView
+        android:id="@+id/tv3_ll_bresenham"
+
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="for initial position we know pk.."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="15dp"
+
+        />
+    <LinearLayout
+        android:id="@+id/lltbl1Bresenham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        >
+        <HorizontalScrollView
+            android:id="@+id/hsvt1_bresenham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TableLayout
+                android:id="@+id/tb1_ll_bresenham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                >
+            </TableLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lltbl2Bresenham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:id="@+id/tv4_ll_bresenham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starting point at"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+        <HorizontalScrollView
+            android:id="@+id/hsvt2_bresenham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TableLayout
+                android:id="@+id/tb2_ll_bresenham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:layout_marginBottom="5dp"
+                >
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
